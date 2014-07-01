@@ -1,0 +1,11 @@
+<h1>Comments#index</h1>
+
+<p>Total comments count : <% @all_comments.count %> </p>
+<p>number of comments are:  <%= @all_comments.count %> </p>
+
+<%@all_comments.each do |com|%>
+<p>************************************<p>
+<p><b>Name:</b><%= com.name%><b>Description:</b><%= com.description%></p>
+
+
+<%end%>

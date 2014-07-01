@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'comments/index'
+
+  resources :titles
+
   resources :students
 
 #  get 'articles/index'
